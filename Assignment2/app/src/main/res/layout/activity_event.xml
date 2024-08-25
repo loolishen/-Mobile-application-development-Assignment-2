@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextEventName"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Event Name"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Is Active?"
+        android:textColor="#EFEAEA"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTicketsAvailable" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Event Name"
+        android:textColor="#EFEAEA"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventId" />
+
+    <EditText
+        android:id="@+id/editTextCategoryId"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Category Id"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <Switch
+        android:id="@+id/isActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Category Id"
+        android:textColor="#EFEAEA"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventName" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Event Id"
+        android:textColor="#EFEAEA"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextEventId"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Auto-generated on save"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tickets Available"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategoryId" />
+
+    <EditText
+        android:id="@+id/editTextTicketsAvailable"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter tickets available"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="New Event Form"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="159dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
